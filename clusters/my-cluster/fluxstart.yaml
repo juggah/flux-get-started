@@ -8,4 +8,4 @@ spec:
   interval: 1m0s
   ref:
     branch: master
-  url: https://github.com/fluxcd/flux-get-started
+  url: https://github.com/juggah/flux-get-started
