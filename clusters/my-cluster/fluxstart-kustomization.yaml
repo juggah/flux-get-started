@@ -5,13 +5,10 @@ metadata:
   name: fluxstart
   namespace: flux-system
 spec:
-  interval: 30m0s
+  interval: 1m0s
   path: ./kustomize
-  prune: true
-  retryInterval: 2m0s
+  prune: false
   sourceRef:
     kind: GitRepository
     name: fluxstart
   targetNamespace: hpa
-  timeout: 3m0s
-  wait: true
