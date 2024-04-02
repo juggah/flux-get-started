@@ -14,3 +14,17 @@ spec:
     port: 9898
     protocol: TCP
     targetPort: http
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: podinfo-ingress
+  namespace: demo
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: podinfo
+          servicePort: 9898
+    host: podinfo.20.76.153.91.nip.io
