@@ -10,7 +10,7 @@ spec:
     name: podinfo
   minReplicas: 2
   maxReplicas: 4
-   targetAverageUtilization: 99
+  targetAverageUtilization: 99
   metrics:
   - type: Resource
     resource:
