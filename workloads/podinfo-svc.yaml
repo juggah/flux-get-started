@@ -22,7 +22,8 @@ metadata:
   namespace: demo
 spec:
   rules:
-  - http:
+  - host: podinfo.20.76.153.91.nip.io
+    http:
       paths:
       - backend:
 	  service:
@@ -31,4 +32,3 @@ spec:
               number: 9898
         path: /
 	pathType: ImplementationSpecific
-    host: podinfo.20.76.153.91.nip.io
