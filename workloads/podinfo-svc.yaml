@@ -24,8 +24,8 @@ spec:
   rules:
   - http:
       paths:
+      pathType: ImplementationSpecific
       - backend:
-        pathType: ImplementationSpecific 
           serviceName: podinfo
           servicePort: 9898
     host: podinfo.20.76.153.91.nip.io
