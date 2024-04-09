@@ -21,6 +21,7 @@ metadata:
   name: podinfo-ingress
   namespace: demo
 spec:
+  ingressClassName: nginx
   rules:
   - host: podinfo.20.76.153.91.nip.io
     http:
